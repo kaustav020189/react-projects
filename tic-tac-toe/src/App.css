@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+.App {
+  font-family: "Agbalumo", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../public/bg.jpg");
+  & > h3 {
+    width: 25%;
+    background: #444;
+    opacity: 80%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 25px;
+    color: white;
+  }
+  & > main {
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+}
+
+#playersBar {
+  height: auto;
+  width: auto;
+  padding: 5px;
+  & > ul {
+    background-color: antiquewhite;
+    height: 100% !important;
+    width: auto;
+    padding: 5px;
+    margin: 0;
+  }
+}

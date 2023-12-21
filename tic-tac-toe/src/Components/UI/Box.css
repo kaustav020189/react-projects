@@ -1,0 +1,21 @@
+li.box {
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 8em !important;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  display: inline-block;
+  background-color: rgb(250, 200, 113);
+  height: 125px;
+  width: 125px;
+  margin: 1px !important;
+  transition: all 0.5s ease;
+}
+li.box:hover,
+li.box:active {
+  background-color: rgb(245, 167, 31);
+  cursor: pointer;
+  height: 125px;
+  width: 125px;
+  margin: 1px !important;
+}

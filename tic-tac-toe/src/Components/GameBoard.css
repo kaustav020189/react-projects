@@ -1,0 +1,14 @@
+#game-board {
+  margin: 2%;
+  padding: 0;
+  height: auto;
+  overflow: auto;
+  & > ul {
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important ;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+  }
+}
