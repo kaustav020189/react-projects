@@ -1,0 +1,15 @@
+.card {
+  width: 90%;
+  height: auto;
+  background: white;
+  box-shadow: 0px 0px 5px 2px #ddd;
+  margin: 0;
+  padding: 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+  background: rgb(251, 245, 70);
+  color: black;
+  transition: all 0.3s linear;
+}
