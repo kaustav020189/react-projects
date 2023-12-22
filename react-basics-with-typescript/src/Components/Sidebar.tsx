@@ -13,6 +13,16 @@ const sidebarItems: sidebarItem[] = [
     name: "Todo Maker",
     description: "A simple todo app (add / modify /delete)",
   },
+  {
+    key: 2,
+    name: "Contact Book",
+    description: "Manage Contacts (add / edit / delete)",
+  },
+  {
+    key: 3,
+    name: "Regex Validator",
+    description: "Enter regex and check string for it",
+  },
 ];
 
 const Sidebar = () => {

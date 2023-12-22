@@ -1,15 +1,20 @@
 import styles from "./Navbar.module.css";
 import styles2 from "../App.module.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar && styles2["gray-box-shadow"]}>
+    <nav className={`${styles.navbar} ${styles2["gray-box-shadow"]}`}>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <Link to="/" className={styles.link}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#">Todo Maker</a>
+          <Link to="/apps" className={styles.link}>
+            Apps
+          </Link>
         </li>
       </ul>
     </nav>

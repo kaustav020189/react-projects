@@ -5,11 +5,19 @@
   box-shadow: 0px 0px 5px 2px #ddd;
   margin: 0;
   padding: 10px;
+  margin-bottom: 5%;
 }
 
 .card:hover {
   cursor: pointer;
-  background: rgb(251, 245, 70);
+  background: rgb(196, 246, 223);
+  color: black;
+  transition: all 0.3s linear;
+}
+
+.card:active {
+  cursor: pointer;
+  background: rgb(124, 182, 156);
   color: black;
   transition: all 0.3s linear;
 }
