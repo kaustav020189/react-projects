@@ -12,8 +12,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/apps" className={styles.link}>
-            Apps
+          <Link to="/dashboard" className={styles.link}>
+            App Dashboard
           </Link>
         </li>
       </ul>
