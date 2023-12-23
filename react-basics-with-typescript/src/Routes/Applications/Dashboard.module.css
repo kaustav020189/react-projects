@@ -15,7 +15,7 @@
 
 .menu-container ul li {
   display: inline-block;
-  max-width: 20%;
+  max-width: 25%;
   height: auto;
   margin: 0 2%;
   padding: 0;
@@ -27,8 +27,9 @@
 }
 
 .app-container {
-  background: #f3f3f3;
+  background: #f5f7f7;
   padding: 2%;
   width: 100dvw;
-  height: 200px;
+  height: auto;
+  overflow: auto;
 }

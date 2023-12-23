@@ -1,0 +1,47 @@
+.button {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 1px 1px 3px 0px #bfbebe;
+  padding: 5px;
+  border: transparent;
+  height: 2.6em;
+  width: 15%;
+  font-size: 1.05em;
+  margin: 0;
+  margin-right: 0.5em;
+  transition: all 0.2s ease-in;
+}
+
+.button:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.button:active {
+  transform: scale(0.98);
+  transition: all 0.1s ease-in;
+}
+
+.buttonColorRed {
+  color: red;
+}
+
+.buttonColorRed:hover {
+  background: rgb(255, 233, 233);
+}
+
+.buttonColorGreen {
+  color: green;
+}
+
+.buttonColorGreen:hover {
+  background: rgb(233, 254, 233);
+}
+
+.buttonColorBlue {
+  color: rgb(12, 112, 188);
+}
+
+.buttonColorBlue:hover {
+  background: rgb(237, 247, 255);
+}

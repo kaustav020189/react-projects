@@ -4,5 +4,48 @@ body {
 }
 
 .gray-box-shadow {
-  box-shadow: 0px 0px 5px 2px #aaa;
+  box-shadow: 1px 1px 5px 1px #c3c3c3;
+}
+
+.homeContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomeBanner {
+  font-size: 7em;
+  opacity: 0;
+}
+
+.welcomeTransition {
+  opacity: 1;
+  color: rgb(219, 79, 79);
+  transition: all 0.7s ease-in 0.2s;
+  transform: translateY(20%);
+}
+
+.paragraph {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+@media (min-width: 480px) and (max-width: 650px) {
+  .welcomeBanner {
+    font-size: 5em;
+  }
+  .paragraph {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcomeBanner {
+    font-size: 3em;
+  }
+  .paragraph {
+    font-size: 15px;
+  }
 }

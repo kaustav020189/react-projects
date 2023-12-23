@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
-import Navbar from "../Components/Navbar";
-import Card from "../Components/UI/Card";
+import Navbar from "../../Components/Navbar";
+import Card from "../../Components/UI/Card";
 import styles from "./Dashboard.module.css";
 
 interface applicationItem {
