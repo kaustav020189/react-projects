@@ -10,6 +10,10 @@ import Todo from "./Routes/Applications/TodoApp/TodoApp";
 import ContactsApp from "./Routes/Applications/ContactsApp/ContactsApp";
 import RegexApp from "./Routes/Applications/RegexApp/RegexApp";
 import ProjectsApp from "./Routes/Applications/ProjectsApp/ProjectsApp";
+import PaginationApp from "./Routes/Applications/PaginationApp/PaginationApp";
+import ReactHooksApp from "./Routes/Applications/ReactHooksApp/ReactHooksApp";
+import CustomHookApp from "./Routes/Applications/CustomHookApp/CustomHookApp";
+import FormsApp from "./Routes/Applications/FormsApp/FormsApp";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +40,22 @@ const router = createBrowserRouter([
       {
         path: "projectsApp",
         element: <ProjectsApp />,
+      },
+      {
+        path: "paginationApp",
+        element: <PaginationApp />,
+      },
+      {
+        path: "reactHooksApp",
+        element: <ReactHooksApp />,
+      },
+      {
+        path: "customHookApp",
+        element: <CustomHookApp />,
+      },
+      {
+        path: "formsApp",
+        element: <FormsApp />,
       },
     ],
   },

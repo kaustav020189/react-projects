@@ -2,27 +2,12 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 1px 1px 1px 0px #e7e6e6;
-  padding: 5px;
-  padding-left: 20px;
+  padding: 3%;
+  padding-left: 5%;
   color: #999;
-  margin: 1em 0.5em 1em 1em;
-  width: 70%;
-  height: 2em;
+  margin: 1em 0.5em 1em 0.5em;
+  width: 90%;
+  height: 30px;
   outline: 0;
   font-size: 1.05em;
-}
-
-.inputFieldForm {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin-bottom: 1em;
-  border-bottom: 1px solid #e3e3e3;
-}
-
-@media screen and (max-width: 800px) {
-  .textField {
-    margin: 0.5em;
-    width: 90%;
-  }
 }

@@ -2,13 +2,12 @@
   border-radius: 5px;
   background: #fff;
   box-shadow: 1px 1px 3px 0px #bfbebe;
-  padding: 5px;
+  padding: 3%;
   border: transparent;
-  height: 2.6em;
-  width: 15%;
+  height: 60px;
+  width: 98%;
   font-size: 1.05em;
-  margin: 0;
-  margin-right: 0.5em;
+  margin: 0.5em;
   transition: all 0.2s ease-in;
 }
 

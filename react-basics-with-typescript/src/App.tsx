@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import styles from "./App.module.css";
 import Navbar from "./Components/Navbar";
 
-const App = () => {
+const App: React.FC = () => {
   useEffect(() => {
     setBannerStyles(`${styles.welcomeBanner}  ${styles.welcomeTransition}`);
   }, []);
 
-  const [bannerStyles, setBannerStyles] = useState(styles.welcomeBanner);
+  const [bannerStyles, setBannerStyles] = useState<string>(
+    styles.welcomeBanner
+  );
 
   return (
     <>

@@ -1,19 +1,28 @@
+import Container from "../../../Components/Container";
 import Sidebar from "../../../Components/Sidebar";
+import Button from "../../../Components/UI/Button";
 import InputField from "../../../Components/UI/InputField";
 import styles from "./ContactsApp.module.css";
 
-const searchSubmitHandler = () => {};
+const buttonClickHandler = (event: Event) => {};
 
-const ContactsApp = () => {
+const ContactsApp: React.FC = () => {
   return (
     <div id={styles["contactsAppContainer"]}>
-      <Sidebar>
+      <aside className={styles.sidebar}>
         <InputField
           textFieldType="input"
           textFieldPlaceholder="Search..."
-          submitHandler={searchSubmitHandler}
         ></InputField>
-      </Sidebar>
+        <Button
+          buttonType="button"
+          buttonValue="New"
+          buttonColor="info"
+          clickHandler={(event: Event) => {
+            buttonClickHandler(event);
+          }}
+        ></Button>
+      </aside>
     </div>
   );
 };

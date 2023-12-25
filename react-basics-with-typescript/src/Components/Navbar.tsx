@@ -2,7 +2,7 @@ import styles from "./Navbar.module.css";
 import styles2 from "../App.module.css";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <nav className={`${styles.navbar} ${styles2["gray-box-shadow"]}`}>
       <ul>
