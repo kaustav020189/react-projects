@@ -1,0 +1,33 @@
+.mainContainer {
+  border: 2px dashed #36d7b7;
+  background: #fff;
+  width: 92%;
+  height: auto;
+  padding: 2%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer ul {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer ul li {
+  width: 98%;
+  height: auto;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-left: 1%;
+  margin-bottom: 1%;
+  display: inline-block;
+  background: #e1f0ed;
+}
+
+.mainContainer ul li span {
+  font-weight: bold;
+}

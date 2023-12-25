@@ -32,7 +32,7 @@ const applicationItems: applicationItem[] = [
   },
   {
     name: "React Pagination",
-    description: "A simple project management app",
+    description: "Display products fetched from DummyJSON using pagination",
     linkto: "paginationApp",
   },
   {

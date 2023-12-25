@@ -20,8 +20,8 @@ const Sidebar = () => {
      * 7. The comparison is done during rendering, and the appropriate output is shown in the below JSX (<p> tag showing counter value decreased or increased)
      * 8. Finally, after the rendering, useEffect runs and updates the value of the ref. Both counter and the ref are now = 1.
      */
-    console.log(prevCounterVal.current);
-    console.log(counter);
+    // console.log(prevCounterVal.current);
+    // console.log(counter);
     prevCounterVal.current = counter;
   }, [counter]);
 
