@@ -10,14 +10,14 @@
   justify-content: center;
 }
 
-.mainContainer ul {
+.mainContainer div ul {
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
 }
 
-.mainContainer ul li {
+.mainContainer div ul li {
   width: 98%;
   height: auto;
   padding-bottom: 1%;
@@ -28,6 +28,36 @@
   background: #e1f0ed;
 }
 
-.mainContainer ul li span {
+.mainContainer div ul li span {
   font-weight: bold;
+  margin-right: 1%;
+  padding: 5px;
+  background: #afe8de;
+}
+
+.pagination {
+  display: flex;
+  width: 20% !important;
+  height: auto;
+  margin-left: 40% !important;
+  margin-top: 30px !important;
+  background: transparent !important;
+}
+
+.pagination li {
+  align-items: center;
+  width: 130px;
+  padding: 10%;
+  background: white;
+  padding: 10px;
+  background: transparent !important;
+}
+
+.pagination li button {
+  width: 100%;
+  height: 100%;
+}
+
+.numberActive {
+  color: red;
 }

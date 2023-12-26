@@ -3,6 +3,10 @@ import Navbar from "../../Components/Navbar";
 import Card from "../../Components/UI/Card";
 import styles from "./Dashboard.module.css";
 
+import { HiArrowCircleDown, HiArrowCircleUp } from "react-icons/hi";
+import Button from "../../Components/UI/Button";
+import { useEffect, useState } from "react";
+
 type applicationItem = {
   name: string;
   description: string;
@@ -47,33 +51,61 @@ const applicationItems: applicationItem[] = [
   },
   {
     name: "User Creation / Form Handling",
-    description: "React Forms",
+    description:
+      "React Forms with TS generics, interfaces & usage of cookies and localstorage",
     linkto: "formsApp",
   },
 ];
 
 const Dashboard = () => {
+  const [showAppDrawer, setShowAppDrawer] = useState(true);
+
+  const toggleAppDrawer = () => {
+    setShowAppDrawer(!showAppDrawer);
+  };
+
+  const pullUpDrawer = () => {
+    // pull up the drawer after 2 seconds
+    setTimeout(() => {
+      setShowAppDrawer(!showAppDrawer);
+    }, 1000);
+  };
+
   return (
     <>
       <Navbar></Navbar>
       <div className={styles["menu-container"]}>
-        <ul>
-          {applicationItems.map((el, index) => {
-            return (
-              <li key={index}>
-                <NavLink to={el.linkto}>
-                  <Card>
-                    <h3>{el.name}</h3>
-                    <p>{el.description}</p>
-                  </Card>
-                </NavLink>
-              </li>
-            );
-          })}
-        </ul>
+        {showAppDrawer && (
+          <ul>
+            {applicationItems.map((el, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={el.linkto}>
+                    <Card>
+                      <h3>{el.name}</h3>
+                      <p>{el.description}</p>
+                    </Card>
+                  </NavLink>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+        <button
+          type="button"
+          className={styles.toggleButton}
+          onClick={toggleAppDrawer}
+        >
+          {!showAppDrawer ? (
+            <HiArrowCircleDown className={styles.arrowIcon} />
+          ) : (
+            <HiArrowCircleUp className={styles.arrowIcon} />
+          )}
+        </button>
       </div>
+
       <div className={styles["app-container"]}>
-        <Outlet />
+        <Outlet context={pullUpDrawer} />
       </div>
     </>
   );
